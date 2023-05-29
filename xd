@@ -1,0 +1,30 @@
+using System;
+
+namespace CalculadoraNotas
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double nota1, nota2, nota3;
+            double sumaNotas;
+
+            Console.WriteLine("Calculadora de suma de notas");
+            Console.WriteLine("Ingrese la primera nota:");
+            nota1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Ingrese la segunda nota:");
+            nota2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Ingrese la tercera nota:");
+            nota3 = Convert.ToDouble(Console.ReadLine());
+
+            sumaNotas = nota1 + nota2 + nota3;
+
+            Console.WriteLine("La suma de las notas es: " + sumaNotas);
+
+            Console.WriteLine("Presione cualquier tecla para salir...");
+            Console.ReadKey();
+        }
+    }
+}
